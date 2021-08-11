@@ -10,3 +10,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #364e82 0%, #2eb5bf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
