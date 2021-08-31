@@ -7,4 +7,5 @@ const score1 = document.querySelector('#score--0')
 const score2 = document.getElementById('score--1')
 const curr1 = document.getElementById('current--0')
 const curr2 = document.getElementById('current--1')
-
+const dice = document.querySelector('.dice')
+const bnew = document.querySelector('.btn--new')
