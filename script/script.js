@@ -9,3 +9,6 @@ const curr1 = document.getElementById('current--0')
 const curr2 = document.getElementById('current--1')
 const dice = document.querySelector('.dice')
 const bnew = document.querySelector('.btn--new')
+const broll = document.querySelector('.btn--roll')
+const bhold = document.querySelector('.btn--hold')
+
