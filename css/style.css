@@ -94,3 +94,8 @@ main {
   font-size: 1.7rem;
   color: #ddd;
 }
+
+.current-score {
+  font-size: 3.5rem;
+}
+
