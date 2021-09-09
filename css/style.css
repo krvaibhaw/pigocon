@@ -73,3 +73,24 @@ main {
   font-weight: 400;
 }
 
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #3686c7;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
