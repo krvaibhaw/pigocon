@@ -110,3 +110,10 @@ main {
   font-family: inherit;
   font-size: 1.8rem;
 }
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
