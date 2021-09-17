@@ -37,3 +37,14 @@ const init = function () {
     p1.classList.remove('player--winner')
     p2.classList.remove('player--winner')
 }
+
+init()
+
+
+const switchPlayer = function () {
+    currscore = 0
+    document.getElementById(`current--${activePlayer}`).textContent = 0
+    activePlayer = (activePlayer === 0) ? 1 : 0
+    p1.classList.toggle('player--active')
+    p2.classList.toggle('player--active')
+}
