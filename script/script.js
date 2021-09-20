@@ -48,3 +48,28 @@ const switchPlayer = function () {
     p1.classList.toggle('player--active')
     p2.classList.toggle('player--active')
 }
+
+
+// Adding rolling dice functionality
+broll.addEventListener('click', function () {
+
+    if (playing) {
+
+        // 1. generating a random dice roll
+        let num = Math.trunc(Math.random()*6) + 1
+
+        // 2. Display dice
+        dice.classList.remove('hidden')
+        dice.src = `/image/dice-${num}.png`
+
+        // 3. Check for roll 1; if true, then switch to next player
+        if (num !== 1) {
+            currscore += num
+            document.getElementById(`current--${activePlayer}`).textContent = currscore
+        }
+        else {
+            switchPlayer()
+        }
+    }
+})
+
