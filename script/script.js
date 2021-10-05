@@ -73,3 +73,33 @@ broll.addEventListener('click', function () {
     }
 })
 
+
+// Adding hold functionality
+bhold.addEventListener('click', function () {
+
+    if (playing) {
+
+        // 1. Add current score to active player's total score
+        tscore[activePlayer] += currscore
+        document.getElementById(`score--${activePlayer}`).textContent = tscore[activePlayer]
+        //`score${activePlayer + 1}`.textContent += tscore[activePlayer]   ::  It didn't worked
+
+        // 2. Check if active player's score is >= 100, 
+        // If so then finish the game
+        if (tscore[activePlayer] >= 101) {
+            playing = false
+            document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
+            document.querySelector(`.player--${activePlayer}`).classList.remove('player--active')
+            dice.classList.add('hidden')
+        }
+
+        else {
+            // If not then switch to next player
+            switchPlayer()
+        }
+    }
+})
+
+
+// Adding new game functionality
+bnew.addEventListener('click', init )
